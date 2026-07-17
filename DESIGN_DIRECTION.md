@@ -172,6 +172,6 @@ Do not create one-off styling that cannot handle Chinese, English, and German te
 
 Before finishing a visual change:
 
-- inspect the diff
 - verify the page still builds
+- do one focused final change review to confirm the visual change stayed within scope
 - check that unrelated confirmed behavior has not changed

@@ -38,6 +38,8 @@ a {
 }
 
 .nav {
+  --nav-pill-width: 8.35rem;
+
   display: grid;
   grid-template-columns: auto 0.25fr minmax(0, 1fr) 0.25fr auto auto auto;
   gap: 1em;
@@ -80,6 +82,7 @@ a {
 .language-switcher {
   display: inline-flex;
   align-items: center;
+  width: var(--nav-pill-width);
   height: 52px;
   overflow: hidden;
   border-radius: 30px;
@@ -106,6 +109,8 @@ a {
 }
 
 .github-button {
+  width: var(--nav-pill-width);
+  padding: 0 1.15em;
   gap: 0.6em;
   font-size: 1.1em;
 }
@@ -204,6 +209,9 @@ a {
 }
 
 @media (max-width: 800px) {
+  .nav {
+    --nav-pill-width: 6.25rem;
+  }
   .container {
     padding: 2em 3em 2em 3em;
     gap: 2em;
@@ -216,6 +224,9 @@ a {
   }
   .language-switcher {
     height: 36px;
+  }
+  .github-button {
+    padding: 0 0.85em;
   }
   .language-option {
     padding: 0 0.7em;

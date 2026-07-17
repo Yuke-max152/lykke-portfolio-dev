@@ -22,10 +22,12 @@ The project currently has:
 - existing visible hero copy migrated into the translation layer
 - front-end language switcher for English, Chinese, and German
 - restrained development FPS performance monitor for the current 3D hero
+- GitHub navigation button width aligned with the language switcher
+- working rules refined to use one focused final change review instead of repeated diff/status checks
 
 Recent confirmed commit:
 
-- `203b6dc Update portfolio branding and GitHub link`
+- `d93fa85 Add development FPS monitor`
 
 ## Completed In Current Phase
 
@@ -48,6 +50,8 @@ Introduced i18n foundation:
 - did not change 3D model, materials, lighting, physics, scene background, object colors, default accent, or animation parameters
 - added a custom neutral FPS monitor overlay for observing the current 3D hero performance during development
 - kept the monitor isolated in its own component with a simple enable switch
+- aligned the GitHub navigation button width with the language switcher without changing the link behavior
+- refined project workflow documentation so future tasks use a focused final change review rather than repeated diff/status checks
 
 ## Scope Completed
 
@@ -59,13 +63,14 @@ Routing, homepage full-page scrolling, projects, writing, content expansion, dep
 
 ## Next Step
 
-Use the FPS monitor to evaluate the current 3D hero performance before implementing homepage scrolling.
+Study `lusion-reverse-engineered` and create a high-quality homepage scrolling implementation plan for Lykke.
 
 Expected scope for that next step:
 
-- measure the current hero performance on desktop and narrow viewport sizes
-- identify whether homepage scrolling can be added without first reducing render cost
-- keep any performance notes focused on the current 3D hero and homepage scroll planning
+- read the reference source related to homepage scrolling, fixed 3D canvas behavior, paging, section rhythm, and scroll-driven effects
+- borrow the interaction structure and technical approach where appropriate without copying third-party source code or visual assets directly
+- produce a concrete plan for adapting the effect to the current React + R3F + Vite architecture
+- define the homepage DOM structure, fixed canvas strategy, section organization, scroll state model, desktop/mobile behavior, and implementation steps
 - keep confirmed branding, GitHub behavior, background, colors, and default accent unchanged
 - do not redesign the page
 - do not change 3D model, materials, lighting, physics, background, object colors, default accent, camera, or animation parameters

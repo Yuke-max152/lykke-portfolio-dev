@@ -16,7 +16,7 @@ If the requested task clearly touches only one narrow file or bug, still read `A
 
 Only modify the areas explicitly requested by the user. Do not make unrelated visual, structural, dependency, formatting, behavior, or content changes.
 
-Before editing, identify the exact intended scope. After editing, inspect the diff and confirm that no unrelated files or behavior were changed.
+Before editing, identify the exact intended scope. After editing, do one focused final change review and confirm that no unrelated files or behavior were changed.
 
 ## Protected Areas
 
@@ -62,7 +62,7 @@ For each task:
 2. Confirm the exact scope from the user's newest request.
 3. Make only the requested changes.
 4. Run an appropriate verification step.
-5. Inspect the diff.
+5. Do one focused final change review. Use `git diff` / `git status` near the end, not repeatedly after every small edit unless the task is risky or the user asks for that level of checking.
 6. Update `STEP.md` when the current step changes or is completed.
 
 Do not combine unrelated roadmap items in a single implementation step.
@@ -74,7 +74,7 @@ Do not commit unless the user asks for a commit.
 Before committing:
 
 - run the relevant verification command
-- inspect `git diff`
+- review the final diff or staged file list once to confirm the commit scope
 - ensure only intended files are staged
 - use a concise commit message that describes the actual change
 
