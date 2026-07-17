@@ -2,7 +2,7 @@
 
 ## Current Phase
 
-Phase 0: Planning and documentation.
+Phase 1: Static Portfolio Foundation.
 
 ## Current Status
 
@@ -17,6 +17,10 @@ The project currently has:
 - GitHub button linked to `https://github.com/Yuke-max152`
 - GitHub button opening in a new tab
 - GitHub SVG icon inside the button
+- formal i18n support configured with `i18next` and `react-i18next`
+- Chinese, English, and German translation resources for current visible hero text
+- existing visible hero copy migrated into the translation layer
+- front-end language switcher for English, Chinese, and German
 
 Recent confirmed commit:
 
@@ -32,22 +36,34 @@ Created root planning documents:
 - `CONTENT_STRATEGY.md`
 - `DESIGN_DIRECTION.md`
 
+Introduced i18n foundation:
+
+- installed `i18next` and `react-i18next`
+- added English, Chinese, and German translation resources
+- migrated only the current visible hero text into i18n
+- added a compact English / Chinese / German language switcher
+- persisted the selected language in browser local storage
+- kept the current page layout and GitHub link behavior unchanged
+- did not change 3D model, materials, lighting, physics, scene background, object colors, default accent, or animation parameters
+
 ## Scope Completed
 
-Only documentation files were created in the root directory.
+Planning documents exist in the root directory.
 
-Application code, styling, routing, dependencies, 3D scene settings, content implementation, and deployment configuration were not changed in this step.
+The current application step completed the i18n foundation and front-end language switching for existing visible hero text.
+
+Routing, homepage full-page scrolling, projects, writing, content expansion, deployment configuration, 3D scene settings, and visual redesign were not changed in this step.
 
 ## Next Step
 
-Introduce formal i18n support for Chinese, English, and German.
+Build the homepage full-page scrolling structure.
 
 Expected scope for that next step:
 
-- install or configure the selected i18n library
-- add translation files or resources
-- migrate only existing visible text into i18n
-- keep the current visual layout unchanged
+- structure the homepage into full-viewport sections
+- preserve the existing 3D hero as the first section
+- add section scaffolding only as needed for the homepage scroll foundation
+- keep confirmed branding, GitHub behavior, background, colors, and default accent unchanged
 - do not redesign the page
 - do not change 3D model, materials, lighting, physics, background, object colors, or default accent
 
