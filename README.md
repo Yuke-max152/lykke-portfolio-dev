@@ -1,8 +1,8 @@
 # Lykke
 
-Lykke is a personal portfolio and writing archive built with React, Vite, and Three.js.
+Lykke is a personal portfolio and blog archive built with React, Vite, and Three.js.
 
-The site is planned as a high-quality personal homepage for selected projects, experiments, technical writing, learning notes, internship reflections, and project reviews. It is intended to support Chinese, English, and German content.
+The site is planned as a high-quality personal homepage for selected projects, experiments, blog posts, learning notes, internship reflections, and project reviews. It is intended to support Chinese, English, and German content.
 
 ## Current Direction
 
@@ -10,7 +10,7 @@ The site is planned as a high-quality personal homepage for selected projects, e
 - full-page homepage sections
 - About Me / Profile section
 - categorized project showcase
-- categorized writing archive
+- categorized blog archive
 - independent article pages
 - static GitHub Pages deployment first
 - future migration path to a dynamic site with an admin CMS

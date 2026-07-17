@@ -41,12 +41,12 @@ Each major section occupies one viewport:
 1. Hero
 2. About Me / Profile
 3. Featured Projects
-4. Featured Writing
+4. Featured Blog
 5. Contact
 
 The scroll experience should move section by section. A section should not contain its own competing full-page scroll behavior.
 
-Subpages such as `/projects`, `/writing`, and article detail pages should use normal scrolling.
+Subpages such as `/projects`, `/blog`, and article detail pages should use normal scrolling.
 
 ## Homepage Scroll Method
 
@@ -58,7 +58,7 @@ The preferred homepage interaction direction should follow the stable parts of t
 - avoid transform-animating a full multi-screen page track that contains the active WebGL scene
 - avoid forcing a custom fullpage scroll state machine before the current 3D hero performance is measured
 
-The homepage may still be organized as viewport-height sections, but the implementation should prioritize smoothness and stability over a strict presentation-slide effect. Projects, writing, and article pages should remain normal scrolling pages.
+The homepage may still be organized as viewport-height sections, but the implementation should prioritize smoothness and stability over a strict presentation-slide effect. Projects, blog, and article pages should remain normal scrolling pages.
 
 Before implementing homepage scroll or page-transition behavior, add and use a development-only FPS monitor to evaluate the current 3D hero performance.
 
@@ -109,9 +109,9 @@ Project cards should support:
 
 Project categories should be visible and easy to scan.
 
-## Writing
+## Blog
 
-The Writing page should use a category-tab layout inspired by article archives.
+The Blog page should use a category-tab layout inspired by article archives.
 
 Reference format:
 

@@ -24,10 +24,11 @@ The project currently has:
 - restrained development FPS performance monitor for the current 3D hero
 - GitHub navigation button width aligned with the language switcher
 - working rules refined to use one focused final change review instead of repeated diff/status checks
+- future archive naming changed to Blog, including the GitHub README introduction
 
 Recent confirmed commit:
 
-- `d93fa85 Add development FPS monitor`
+- `c0beda8 Align GitHub button and refine workflow rules`
 
 ## Completed In Current Phase
 
@@ -52,6 +53,7 @@ Introduced i18n foundation:
 - kept the monitor isolated in its own component with a simple enable switch
 - aligned the GitHub navigation button width with the language switcher without changing the link behavior
 - refined project workflow documentation so future tasks use a focused final change review rather than repeated diff/status checks
+- renamed the planned archive area to Blog across planning documents and the GitHub-facing README introduction
 
 ## Scope Completed
 
@@ -59,7 +61,7 @@ Planning documents exist in the root directory.
 
 The current application step completed the i18n foundation, front-end language switching for existing visible hero text, and a development FPS monitor for the existing 3D hero.
 
-Routing, homepage full-page scrolling, projects, writing, content expansion, deployment configuration, 3D scene settings, and visual redesign were not changed in this step.
+Routing, homepage full-page scrolling, projects, blog content expansion, deployment configuration, 3D scene settings, and visual redesign were not changed in this step.
 
 ## Next Step
 
@@ -83,7 +85,7 @@ After performance diagnostics are in place, the homepage scroll implementation s
 - use scroll position to drive subtle 3D response only after measuring performance
 - avoid moving one large transformed page wrapper that contains the WebGL canvas
 - avoid reintroducing a custom fullpage transition system before the 3D hero performance is understood
-- keep subpages such as `/projects`, `/writing`, and article routes on normal scrolling
+- keep subpages such as `/projects`, `/blog`, and article routes on normal scrolling
 
 ## Working Rule For Future Conversations
 

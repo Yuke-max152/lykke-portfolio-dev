@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This roadmap defines the long-term plan for turning the current site into a high-quality personal portfolio, writing archive, and project showcase.
+This roadmap defines the long-term plan for turning the current site into a high-quality personal portfolio, blog archive, and project showcase.
 
 Detailed current progress belongs in `STEP.md`. This file should describe the overall path, not the current task pointer.
 
@@ -36,8 +36,8 @@ Recommended route direction:
 
 - `/`
 - `/projects`
-- `/writing`
-- `/writing/:slug`
+- `/blog`
+- `/blog/:slug`
 - optional later: `/projects/:slug`
 
 For GitHub Pages, use a robust routing strategy with fallback support if using clean browser routes.
@@ -51,7 +51,7 @@ Homepage sections:
 1. Hero
 2. About Me / Profile
 3. Featured Projects
-4. Featured Writing
+4. Featured Blog
 5. Contact
 
 Each section should occupy one viewport-height panel. Scrolling should move section by section, while subpages should use normal scrolling.
@@ -72,13 +72,13 @@ Goals:
 
 The user may not have deployed every project yet. In that case, cards can show repository links with user-facing labels such as `Source`, `View Code`, or `Repository`, not raw URLs.
 
-## Phase 4: Writing System
+## Phase 4: Blog System
 
-Build the writing and notes system.
+Build the blog and notes system.
 
 Goals:
 
-- category tabs at the top of the writing page
+- category tabs at the top of the blog page
 - article list below the tabs
 - article items with left-side cover image and right-side text
 - title, date, category, summary, tags, and language metadata

@@ -7,7 +7,7 @@ Before making any change in a new conversation, read these root documents:
 - `AGENTS.md` for working rules and protected areas.
 - `STEP.md` for the current project status and next task.
 - `ROADMAP.md` for the long-term development plan.
-- `CONTENT_STRATEGY.md` before changing projects, writing, articles, categories, languages, or content data.
+- `CONTENT_STRATEGY.md` before changing projects, blog content, articles, categories, languages, or content data.
 - `DESIGN_DIRECTION.md` before changing layout, UI, interaction, animation, visual style, or responsive behavior.
 
 If the requested task clearly touches only one narrow file or bug, still read `AGENTS.md` and `STEP.md` first.
@@ -48,7 +48,7 @@ Every feature should be built with the future portfolio direction in mind:
 - multilingual content in Chinese, English, and German
 - full-page homepage scrolling
 - categorized projects
-- categorized writing and article routes
+- categorized blog and article routes
 - GitHub Pages deployment first
 - future migration to a dynamic site with an admin CMS
 
@@ -92,7 +92,7 @@ Avoid low-quality visual shortcuts, excessive decoration, heavy gradients, clutt
 
 Do not hard-code content in components when it belongs in a content or translation layer, unless the user explicitly requests a small temporary change.
 
-Projects, writing categories, article metadata, and multilingual text should follow `CONTENT_STRATEGY.md`.
+Projects, blog categories, article metadata, and multilingual text should follow `CONTENT_STRATEGY.md`.
 
 ## Deployment Direction
 

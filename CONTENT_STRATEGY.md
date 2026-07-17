@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This document defines how portfolio content, project content, writing content, categories, article metadata, multilingual content, and future admin CMS planning should be structured.
+This document defines how portfolio content, project content, blog content, categories, article metadata, multilingual content, and future admin CMS planning should be structured.
 
 ## Site Structure
 
@@ -11,14 +11,14 @@ Homepage:
 1. Hero
 2. About Me / Profile
 3. Featured Projects
-4. Featured Writing
+4. Featured Blog
 5. Contact
 
 Subpages:
 
 - `/projects`
-- `/writing`
-- `/writing/:slug`
+- `/blog`
+- `/blog/:slug`
 - optional later: `/projects/:slug`
 - optional later: `/about`
 
@@ -62,7 +62,7 @@ Each project should support:
 
 If a project is not deployed yet, show a repository action with a label such as `Source`, `View Code`, or `Repository`, not the raw URL.
 
-## Writing Categories
+## Blog Categories
 
 Initial categories:
 
@@ -73,7 +73,7 @@ Initial categories:
 - Frontend
 - Notes
 
-The Writing page should use category tabs at the top and an article list below.
+The Blog page should use category tabs at the top and an article list below.
 
 Article list item format:
 
@@ -93,9 +93,9 @@ An article detail page is a first-class page on this website for reading one com
 
 Example routes:
 
-- `/writing/react-useeffect-notes`
-- `/writing/internship-week-3`
-- `/writing/portfolio-review`
+- `/blog/react-useeffect-notes`
+- `/blog/internship-week-3`
+- `/blog/portfolio-review`
 
 Article detail pages should be shareable directly and should belong to this website, not only redirect to external platforms.
 
@@ -106,7 +106,7 @@ Phase 1 should use MDX for articles.
 MDX is the formal first-stage content system, not a low-quality workaround. It allows:
 
 - article metadata
-- rich Markdown writing
+- rich Markdown blog content
 - images
 - code blocks
 - custom React content components
@@ -159,7 +159,7 @@ Multilingual support should apply to:
 - interface labels
 - homepage content
 - project metadata
-- writing metadata
+- blog metadata
 - article content when translations exist
 
 Do not assume every article will immediately have all three translations. The content model should allow partial translations without breaking the site.
