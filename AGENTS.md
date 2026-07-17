@@ -78,6 +78,8 @@ Before committing:
 - ensure only intended files are staged
 - use a concise commit message that describes the actual change
 
+If the user asks for a commit immediately after verification and diff inspection were already completed, and no files have changed since those checks, do not repeat the same verification or diff commands. In that case, only confirm the working tree/staged state as needed, stage the intended files, and commit.
+
 ## Design Rules
 
 Do not improvise a new visual direction without checking `DESIGN_DIRECTION.md`.
