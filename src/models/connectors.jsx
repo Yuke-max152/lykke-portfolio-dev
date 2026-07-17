@@ -17,6 +17,7 @@ import {
 import { EffectComposer, N8AO } from '@react-three/postprocessing';
 import { easing } from 'maath';
 
+import FpsMonitor from '../components/FpsMonitor.jsx';
 import ConnectorsOne from '../assets/3d/connectors.glb';
 import { languageOptions } from '../i18n/resources.js';
 
@@ -85,6 +86,7 @@ const ConnectPage = () => {
           <div className="button gray">{t('hero.menuMark')}</div>
         </div>
         <Scene style={{ borderRadius: 20 }} />
+        <FpsMonitor />
       </div>
     </section>
   );

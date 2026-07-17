@@ -21,6 +21,7 @@ The project currently has:
 - Chinese, English, and German translation resources for current visible hero text
 - existing visible hero copy migrated into the translation layer
 - front-end language switcher for English, Chinese, and German
+- restrained development FPS performance monitor for the current 3D hero
 
 Recent confirmed commit:
 
@@ -45,25 +46,26 @@ Introduced i18n foundation:
 - persisted the selected language in browser local storage
 - kept the current page layout and GitHub link behavior unchanged
 - did not change 3D model, materials, lighting, physics, scene background, object colors, default accent, or animation parameters
+- added a custom neutral FPS monitor overlay for observing the current 3D hero performance during development
+- kept the monitor isolated in its own component with a simple enable switch
 
 ## Scope Completed
 
 Planning documents exist in the root directory.
 
-The current application step completed the i18n foundation and front-end language switching for existing visible hero text.
+The current application step completed the i18n foundation, front-end language switching for existing visible hero text, and a development FPS monitor for the existing 3D hero.
 
-Routing, homepage full-page scrolling, projects, writing, content expansion, deployment configuration, 3D scene settings, performance diagnostics, and visual redesign were not changed in this step.
+Routing, homepage full-page scrolling, projects, writing, content expansion, deployment configuration, 3D scene settings, and visual redesign were not changed in this step.
 
 ## Next Step
 
-Add a development-only FPS performance monitor that matches the site's visual style.
+Use the FPS monitor to evaluate the current 3D hero performance before implementing homepage scrolling.
 
 Expected scope for that next step:
 
-- add a small FPS/performance overlay for local development only
-- keep the monitor visually restrained and consistent with the existing Lykke hero style
-- make sure the monitor does not appear in production builds
-- use the monitor to evaluate the current 3D hero performance before further homepage structure work
+- measure the current hero performance on desktop and narrow viewport sizes
+- identify whether homepage scrolling can be added without first reducing render cost
+- keep any performance notes focused on the current 3D hero and homepage scroll planning
 - keep confirmed branding, GitHub behavior, background, colors, and default accent unchanged
 - do not redesign the page
 - do not change 3D model, materials, lighting, physics, background, object colors, default accent, camera, or animation parameters

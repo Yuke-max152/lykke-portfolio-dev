@@ -117,6 +117,71 @@ a {
   flex: 0 0 auto;
 }
 
+.fps-monitor {
+  position: absolute;
+  left: clamp(2rem, 5vw, 5rem);
+  bottom: clamp(1.5rem, 4vw, 3rem);
+  z-index: 3;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: baseline;
+  gap: 0.15rem 0.55rem;
+  min-width: 92px;
+  padding: 0.7rem 0.8rem 0.75rem;
+  border: 1px solid rgba(20, 22, 34, 0.1);
+  border-radius: 12px;
+  background: rgba(244, 244, 242, 0.72);
+  color: #141622;
+  box-shadow: 0 12px 30px rgba(20, 22, 34, 0.08);
+  backdrop-filter: blur(16px);
+  pointer-events: none;
+}
+
+.fps-monitor__label {
+  font-size: 0.62rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  color: rgba(20, 22, 34, 0.46);
+}
+
+.fps-monitor__value {
+  justify-self: end;
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.fps-monitor__meta {
+  font-size: 0.68rem;
+  line-height: 1;
+  color: rgba(20, 22, 34, 0.54);
+  font-variant-numeric: tabular-nums;
+}
+
+.fps-monitor__track {
+  align-self: center;
+  justify-self: end;
+  width: 34px;
+  height: 2px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(20, 22, 34, 0.14);
+}
+
+.fps-monitor__bar {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: rgba(20, 22, 34, 0.72);
+  transform: scaleX(var(--fps-ratio));
+  transform-origin: left center;
+  transition: transform 160ms ease;
+}
+
 @media (max-width: 1200px) {
   .container {
     padding: 2em 4em 2em 4em;
@@ -195,5 +260,11 @@ a {
   .container {
     padding: 2em 2em 2em 2em;
     gap: 2em;
+  }
+  .fps-monitor {
+    left: 2rem;
+    bottom: 1.25rem;
+    min-width: 84px;
+    padding: 0.62rem 0.68rem 0.68rem;
   }
 }
