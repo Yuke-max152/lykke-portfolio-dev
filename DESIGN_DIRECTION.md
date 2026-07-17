@@ -48,6 +48,20 @@ The scroll experience should move section by section. A section should not conta
 
 Subpages such as `/projects`, `/writing`, and article detail pages should use normal scrolling.
 
+## Homepage Scroll Method
+
+The preferred homepage interaction direction should follow the stable parts of the `lusion-reverse-engineered` reference:
+
+- keep the 3D canvas visually fixed to the viewport when building scroll-based homepage sections
+- let normal document scrolling drive the page instead of moving one large wrapper that contains the WebGL canvas
+- use scroll position to influence 3D presentation only when the effect is measured and stable
+- avoid transform-animating a full multi-screen page track that contains the active WebGL scene
+- avoid forcing a custom fullpage scroll state machine before the current 3D hero performance is measured
+
+The homepage may still be organized as viewport-height sections, but the implementation should prioritize smoothness and stability over a strict presentation-slide effect. Projects, writing, and article pages should remain normal scrolling pages.
+
+Before implementing homepage scroll or page-transition behavior, add and use a development-only FPS monitor to evaluate the current 3D hero performance.
+
 ## Hero
 
 The existing 3D hero is the visual anchor of the site.

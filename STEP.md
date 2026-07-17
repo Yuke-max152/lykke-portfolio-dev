@@ -52,20 +52,31 @@ Planning documents exist in the root directory.
 
 The current application step completed the i18n foundation and front-end language switching for existing visible hero text.
 
-Routing, homepage full-page scrolling, projects, writing, content expansion, deployment configuration, 3D scene settings, and visual redesign were not changed in this step.
+Routing, homepage full-page scrolling, projects, writing, content expansion, deployment configuration, 3D scene settings, performance diagnostics, and visual redesign were not changed in this step.
 
 ## Next Step
 
-Build the homepage full-page scrolling structure.
+Add a development-only FPS performance monitor that matches the site's visual style.
 
 Expected scope for that next step:
 
-- structure the homepage into full-viewport sections
-- preserve the existing 3D hero as the first section
-- add section scaffolding only as needed for the homepage scroll foundation
+- add a small FPS/performance overlay for local development only
+- keep the monitor visually restrained and consistent with the existing Lykke hero style
+- make sure the monitor does not appear in production builds
+- use the monitor to evaluate the current 3D hero performance before further homepage structure work
 - keep confirmed branding, GitHub behavior, background, colors, and default accent unchanged
 - do not redesign the page
-- do not change 3D model, materials, lighting, physics, background, object colors, or default accent
+- do not change 3D model, materials, lighting, physics, background, object colors, default accent, camera, or animation parameters
+
+## Planned Homepage Scroll Direction
+
+After performance diagnostics are in place, the homepage scroll implementation should follow the `Homepage Scroll Method` in `DESIGN_DIRECTION.md`:
+
+- prefer a fixed 3D canvas with normal document scrolling
+- use scroll position to drive subtle 3D response only after measuring performance
+- avoid moving one large transformed page wrapper that contains the WebGL canvas
+- avoid reintroducing a custom fullpage transition system before the 3D hero performance is understood
+- keep subpages such as `/projects`, `/writing`, and article routes on normal scrolling
 
 ## Working Rule For Future Conversations
 
