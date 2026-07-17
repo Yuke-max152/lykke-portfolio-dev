@@ -129,7 +129,6 @@ Use a restrained palette that supports the existing hero:
 - black
 - white
 - muted neutral grays
-- existing green accent where appropriate
 
 Avoid introducing many unrelated accent colors.
 
@@ -145,8 +144,11 @@ Reference sites and screenshots may be used to study:
 - article archive layout
 - editorial rhythm
 - portfolio presentation
+- visual rhythm, spacing, motion, and interaction details when the user explicitly asks to use a reference closely
 
-Do not copy protected visual design directly. Convert references into original layouts that fit Lykke's content and existing 3D identity.
+Reference direction should not be treated as a hard ban on similarity. When the user explicitly names a reference project, it is acceptable to follow its structure, interaction model, pacing, and visual language closely enough to achieve the requested experience.
+
+Before directly reusing third-party protected assets, logos, brand marks, images, or exact proprietary source code, confirm that the user wants that and has the right to use it. Prefer adapting the reference to Lykke's content and existing 3D identity unless the user asks for a closer match.
 
 ## Implementation Standard
 
